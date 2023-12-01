@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="web.css">
+  <title>Event Management and Ticket Booking</title>
+  </head>
+<body>
+  <header>
+    <h1>Event Management and Ticket Booking</h1>
+    <img src="https://www.lpu.in/images/logo/logo-media.svg" height="100px" width="100px">
+  </header>
+  <main>
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <div class="event">
+        <img src="https://i0.wp.com/onedayitinerary.com/wp-content/uploads/2022/05/One-day-in-Chandigarh-Itinerary.jpg?fit=800%2C600&ssl=1" alt="Trip to chandigarh" width="150px" height="150"px>
+        <h3>Event Name = Trip To Chandigarh  </h3>
+        <p>Date: 1/12/2023</p>
+        <p>Location: Lovely Professional University, Phagwara </p>
+        <p>Ticket Cost: Rs 600 per head</p>
+        <p>Pick Up Location: LPU Unimall </p>
+        
+        <button onclick="bookTicket()">Book Now</button>
+        
+
+      </div>
+      <div class="event">
+        <img src="https://i1.sndcdn.com/avatars-Ai7sk2G6lJfwqYux-Yo4y5A-t500x500.jpg" alt="dj party" width="250" height="250">
+        <h3>Event Name = Dj party night  </h3>
+        <p>Date: 5/12/2023</p>
+        <p>Location: Lovely Professional University, Phagwara </p>
+        <p>Ticket Cost: Rs 200 per head</p>
+        <p>Location: LPU Unipolis  </p>
+        
+        <button onclick="bookTicket()">Book Now</button>
+      </div>
+      <div class="event">
+        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/2024-new-years-party-video-invitation-design-template-e7c3f7c2dfd564830388e814196beac2_screen.jpg?ts=1699288287" alt="New Year party" width="250" height="250">
+        <h3>Event Name = New Year Party  </h3>
+        <p>Date:31/12/2023 </p>
+        <p>Location: Lovely Professional University, Phagwara </p>
+        <p>Ticket Cost: Rs 150 per head</p>
+        <p>Location: LPU Unipolis  </p>
+        
+        <button onclick="bookTicket()">Book Now</button>
+      </div>
+      <div class="event">
+        <img src="https://previews.123rf.com/images/ankabala/ankabala1712/ankabala171200026/91543115-stop-motion-animation-of-christmas-party-2023.jpg" alt="Christmas party" width= "200" height="200">
+        <h3>Event Name = Christmas Party  </h3>
+        <p>Date:25/12/2023 </p>
+        <p>Location: Lovely Professional University, Phagwara </p>
+        <p>Ticket Cost: Rs 150 per head</p>
+        <p>Location: LPU Unimall  </p>
+        
+        <button onclick="bookTicket()">Book Now</button>
+      </div>
+      <div class="eventd">
+        <small>for more events  <strong><a href="https://www.lpu.in/campus_life/campus-events.php">click here...</a></strong></small>
+      </div>
+      <!-- More event listings -->
+    </section>
+    <section id="bookingForm">
+      <h2>Book Tickets</h2>
+      <form id="ticketForm" onsubmit="submitForm(event)">
+        <input type="text" id="eventName" placeholder="Event Name" required>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="number" id="quantity" placeholder="No. of Tickets" required>
+        <button type="submit">Confirm Booking</button>
+        
+      </form>
+    </section>
+  </main>
+  <script src="web.js"></script>
+</body>
+</html>
